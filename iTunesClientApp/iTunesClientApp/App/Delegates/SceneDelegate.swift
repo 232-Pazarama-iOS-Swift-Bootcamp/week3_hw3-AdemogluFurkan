@@ -50,11 +50,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     private func setupWindow(with windowScene:UIWindowScene){
         let window = UIWindow(windowScene: windowScene)
-        let viewController = MainViewController()
-        let navigationController = UINavigationController(rootViewController: viewController)
-        window.rootViewController = navigationController
-        window.makeKeyAndVisible()
-        self.window = window
+             let viewController = MainViewController()
+             let navigationController = UINavigationController(rootViewController: viewController)
+             let tabBarController = UITabBarController()
+             tabBarController.viewControllers = [navigationController]
+             window.rootViewController = tabBarController
+             window.makeKeyAndVisible()
+             self.window = window
     }
 
 }
