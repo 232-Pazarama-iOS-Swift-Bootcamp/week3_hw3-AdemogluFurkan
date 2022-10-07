@@ -11,6 +11,10 @@
 		E217175828F03CA30000ED51 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = E217175728F03CA30000ED51 /* Music.swift */; };
 		E217175C28F03E320000ED51 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E217175B28F03E320000ED51 /* MusicViewController.swift */; };
 		E217175E28F040B90000ED51 /* MusicRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E217175D28F040B90000ED51 /* MusicRequest.swift */; };
+		E217176428F058170000ED51 /* MovieResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E217176328F058170000ED51 /* MovieResponse.swift */; };
+		E217176628F058210000ED51 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E217176528F058210000ED51 /* Movie.swift */; };
+		E217176828F058A00000ED51 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E217176728F058A00000ED51 /* MovieViewController.swift */; };
+		E217176A28F05B8E0000ED51 /* MovieRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E217176928F05B8E0000ED51 /* MovieRequest.swift */; };
 		E240323E28EF2D4700931258 /* PodcastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E240323D28EF2D4700931258 /* PodcastCollectionViewCell.swift */; };
 		E240324128EF2E1500931258 /* DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E240324028EF2E1500931258 /* DataRequest.swift */; };
 		E240324328EF2E3B00931258 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E240324228EF2E3B00931258 /* ErrorResponse.swift */; };
@@ -36,6 +40,10 @@
 		E217175728F03CA30000ED51 /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
 		E217175B28F03E320000ED51 /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
 		E217175D28F040B90000ED51 /* MusicRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicRequest.swift; sourceTree = "<group>"; };
+		E217176328F058170000ED51 /* MovieResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResponse.swift; sourceTree = "<group>"; };
+		E217176528F058210000ED51 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		E217176728F058A00000ED51 /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
+		E217176928F05B8E0000ED51 /* MovieRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRequest.swift; sourceTree = "<group>"; };
 		E240323D28EF2D4700931258 /* PodcastCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastCollectionViewCell.swift; sourceTree = "<group>"; };
 		E240324028EF2E1500931258 /* DataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRequest.swift; sourceTree = "<group>"; };
 		E240324228EF2E3B00931258 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
@@ -103,6 +111,40 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		E217175F28F056DD0000ED51 /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				E217176228F057F80000ED51 /* View */,
+				E217176128F057F10000ED51 /* Controller */,
+				E217176028F057EB0000ED51 /* Model */,
+			);
+			path = Movie;
+			sourceTree = "<group>";
+		};
+		E217176028F057EB0000ED51 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E217176328F058170000ED51 /* MovieResponse.swift */,
+				E217176528F058210000ED51 /* Movie.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E217176128F057F10000ED51 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E217176728F058A00000ED51 /* MovieViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E217176228F057F80000ED51 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		E240323C28EF2D1E00931258 /* PodcastCollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +167,7 @@
 			children = (
 				E240324728EF2E9400931258 /* PodcastRequest.swift */,
 				E217175D28F040B90000ED51 /* MusicRequest.swift */,
+				E217176928F05B8E0000ED51 /* MovieRequest.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -220,6 +263,7 @@
 		E2B2329428EDE5CA009B9DB8 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				E217175F28F056DD0000ED51 /* Movie */,
 				E217175328F03C4B0000ED51 /* Music */,
 				E240324C28EF2FCF00931258 /* Detail */,
 				E2B2329528EDE5CA009B9DB8 /* Main */,
@@ -369,6 +413,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E217176428F058170000ED51 /* MovieResponse.swift in Sources */,
 				E240324128EF2E1500931258 /* DataRequest.swift in Sources */,
 				E240325428EF338700931258 /* CGFloat+Extensions.swift in Sources */,
 				E2B232A828EDE5CA009B9DB8 /* AppDelegate.swift in Sources */,
@@ -382,13 +427,16 @@
 				E2B232A528EDE5CA009B9DB8 /* MainViewController.swift in Sources */,
 				E240325028EF2FFF00931258 /* DetailView.swift in Sources */,
 				E2B232A628EDE5CA009B9DB8 /* MainView.swift in Sources */,
+				E217176A28F05B8E0000ED51 /* MovieRequest.swift in Sources */,
 				E2B232A928EDE5CA009B9DB8 /* SceneDelegate.swift in Sources */,
 				E240324828EF2E9400931258 /* PodcastRequest.swift in Sources */,
 				E240324B28EF2EC200931258 /* NetworkService.swift in Sources */,
 				E217175628F03C740000ED51 /* MusicResponse.swift in Sources */,
 				E240323E28EF2D4700931258 /* PodcastCollectionViewCell.swift in Sources */,
 				E240325228EF304000931258 /* DetailViewController.swift in Sources */,
+				E217176628F058210000ED51 /* Movie.swift in Sources */,
 				E240325628EF33BB00931258 /* UIImage+Extensions.swift in Sources */,
+				E217176828F058A00000ED51 /* MovieViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

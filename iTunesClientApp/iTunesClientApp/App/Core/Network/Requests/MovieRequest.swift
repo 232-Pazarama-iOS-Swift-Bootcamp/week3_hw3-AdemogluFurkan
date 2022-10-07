@@ -1,5 +1,5 @@
 //
-//  MusicRequest.swift
+//  MovieRequest.swift
 //  iTunesClientApp
 //
 //  Created by Furkan Ademoğlu on 7.10.2022.
@@ -7,9 +7,7 @@
 
 import Foundation
 
-
-
-struct MusicRequest: DataRequest {
+struct MovieRequest: DataRequest {
     
     var searchText: String
     
@@ -23,21 +21,21 @@ struct MusicRequest: DataRequest {
     
     var queryItems: [String : String] {
         ["term": searchText,
-         "media" : "music"]
+         "media" : "movie"]
     }
     
     var method: HTTPMethod {
         .get
     }
     
-    init(searchText: String = "Music") {
+    init(searchText: String = "Movie") {
         self.searchText = searchText
     }
     
-    func decode(_ data: Data) throws -> MusicResponse {
+    func decode(_ data: Data) throws -> MovieResponse {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
-        let response = try decoder.decode(MusicResponse.self, from: data)
+        let response = try decoder.decode(MovieResponse.self, from: data)
         return response
     }
 }
