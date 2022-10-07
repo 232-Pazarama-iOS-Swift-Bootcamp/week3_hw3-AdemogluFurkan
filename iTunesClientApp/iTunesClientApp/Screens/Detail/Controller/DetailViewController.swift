@@ -19,6 +19,17 @@ final class DetailViewController: UIViewController {
               detailView.genres = podcast?.genres?.reduce("") { $1 + ", " + $0 }
           }
       }
+    
+    var music: Music? {
+          didSet {
+              title = music?.trackName
+              detailView.imageView.downloadImage(from: music?.artworkLarge)
+              detailView.releaseDate = music?.releaseDate
+              detailView.artistName = music?.artistName
+              detailView.country = music?.country
+              detailView.genres = music?.genres?.reduce("") { $1 + ", " + $0 }
+          }
+      }
       
       private let detailView = DetailView()
       

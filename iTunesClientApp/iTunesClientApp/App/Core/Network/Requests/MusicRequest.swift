@@ -1,13 +1,15 @@
 //
-//  PodcastRequest.swift
+//  MusicRequest.swift
 //  iTunesClientApp
 //
-//  Created by Furkan Ademoğlu on 6.10.2022.
+//  Created by Furkan Ademoğlu on 7.10.2022.
 //
 
 import Foundation
 
-struct PodcastRequest: DataRequest {
+
+
+struct MusicRequest: DataRequest {
     
     var searchText: String
     
@@ -21,7 +23,7 @@ struct PodcastRequest: DataRequest {
     
     var queryItems: [String : String] {
         ["term": searchText,
-         "media" : "podcast"]
+         "media" : "music"]
     }
     
     var method: HTTPMethod {
@@ -32,10 +34,10 @@ struct PodcastRequest: DataRequest {
         self.searchText = searchText
     }
     
-    func decode(_ data: Data) throws -> PodcastResponse {
+    func decode(_ data: Data) throws -> MusicResponse {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
-        let response = try decoder.decode(PodcastResponse.self, from: data)
+        let response = try decoder.decode(MusicResponse.self, from: data)
         return response
     }
 }

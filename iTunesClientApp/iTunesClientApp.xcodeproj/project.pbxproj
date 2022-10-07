@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E217175628F03C740000ED51 /* MusicResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E217175528F03C740000ED51 /* MusicResponse.swift */; };
+		E217175828F03CA30000ED51 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = E217175728F03CA30000ED51 /* Music.swift */; };
+		E217175C28F03E320000ED51 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E217175B28F03E320000ED51 /* MusicViewController.swift */; };
+		E217175E28F040B90000ED51 /* MusicRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E217175D28F040B90000ED51 /* MusicRequest.swift */; };
 		E240323E28EF2D4700931258 /* PodcastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E240323D28EF2D4700931258 /* PodcastCollectionViewCell.swift */; };
 		E240324128EF2E1500931258 /* DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E240324028EF2E1500931258 /* DataRequest.swift */; };
 		E240324328EF2E3B00931258 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E240324228EF2E3B00931258 /* ErrorResponse.swift */; };
@@ -28,6 +32,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E217175528F03C740000ED51 /* MusicResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicResponse.swift; sourceTree = "<group>"; };
+		E217175728F03CA30000ED51 /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		E217175B28F03E320000ED51 /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
+		E217175D28F040B90000ED51 /* MusicRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicRequest.swift; sourceTree = "<group>"; };
 		E240323D28EF2D4700931258 /* PodcastCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastCollectionViewCell.swift; sourceTree = "<group>"; };
 		E240324028EF2E1500931258 /* DataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRequest.swift; sourceTree = "<group>"; };
 		E240324228EF2E3B00931258 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
@@ -61,6 +69,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E217175328F03C4B0000ED51 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				E217175A28F03D990000ED51 /* View */,
+				E217175928F03D910000ED51 /* Controller */,
+				E217175428F03C560000ED51 /* Model */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		E217175428F03C560000ED51 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E217175528F03C740000ED51 /* MusicResponse.swift */,
+				E217175728F03CA30000ED51 /* Music.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E217175928F03D910000ED51 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E217175B28F03E320000ED51 /* MusicViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E217175A28F03D990000ED51 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		E240323C28EF2D1E00931258 /* PodcastCollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				E240324728EF2E9400931258 /* PodcastRequest.swift */,
+				E217175D28F040B90000ED51 /* MusicRequest.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -177,6 +220,7 @@
 		E2B2329428EDE5CA009B9DB8 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				E217175328F03C4B0000ED51 /* Music */,
 				E240324C28EF2FCF00931258 /* Detail */,
 				E2B2329528EDE5CA009B9DB8 /* Main */,
 			);
@@ -328,8 +372,11 @@
 				E240324128EF2E1500931258 /* DataRequest.swift in Sources */,
 				E240325428EF338700931258 /* CGFloat+Extensions.swift in Sources */,
 				E2B232A828EDE5CA009B9DB8 /* AppDelegate.swift in Sources */,
+				E217175C28F03E320000ED51 /* MusicViewController.swift in Sources */,
 				E27F2B9028EDFE15002148F8 /* Podcast.swift in Sources */,
 				E240324528EF2E5800931258 /* HTTPMethod.swift in Sources */,
+				E217175828F03CA30000ED51 /* Music.swift in Sources */,
+				E217175E28F040B90000ED51 /* MusicRequest.swift in Sources */,
 				E27F2B8E28EDFAC7002148F8 /* PodcastResponse.swift in Sources */,
 				E240324328EF2E3B00931258 /* ErrorResponse.swift in Sources */,
 				E2B232A528EDE5CA009B9DB8 /* MainViewController.swift in Sources */,
@@ -338,6 +385,7 @@
 				E2B232A928EDE5CA009B9DB8 /* SceneDelegate.swift in Sources */,
 				E240324828EF2E9400931258 /* PodcastRequest.swift in Sources */,
 				E240324B28EF2EC200931258 /* NetworkService.swift in Sources */,
+				E217175628F03C740000ED51 /* MusicResponse.swift in Sources */,
 				E240323E28EF2D4700931258 /* PodcastCollectionViewCell.swift in Sources */,
 				E240325228EF304000931258 /* DetailViewController.swift in Sources */,
 				E240325628EF33BB00931258 /* UIImage+Extensions.swift in Sources */,
