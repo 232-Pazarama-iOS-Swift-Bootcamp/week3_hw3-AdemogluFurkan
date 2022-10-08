@@ -33,12 +33,23 @@ final class DetailViewController: UIViewController {
     
     var movie: Movie? {
           didSet {
-              title = music?.trackName
-              detailView.imageView.downloadImage(from: music?.artworkLarge)
-              detailView.releaseDate = music?.releaseDate
-              detailView.artistName = music?.artistName
-              detailView.country = music?.country
-              detailView.genres = music?.genres?.reduce("") { $1 + ", " + $0 }
+              title = movie?.trackName
+              detailView.imageView.downloadImage(from: movie?.artworkLarge)
+              detailView.releaseDate = movie?.releaseDate
+              detailView.artistName = movie?.artistName
+              detailView.country = movie?.country
+              detailView.genres = movie?.genres?.reduce("") { $1 + ", " + $0 }
+          }
+      }
+    
+    var software: Software? {
+          didSet {
+              title = software?.trackName
+              detailView.imageView.downloadImage(from: software?.artworkLarge)
+              detailView.releaseDate = software?.releaseDate
+              detailView.artistName = software?.artistName
+              detailView.country = software?.country
+              detailView.genres = software?.genres?.reduce("") { $1 + ", " + $0 }
           }
       }
       
