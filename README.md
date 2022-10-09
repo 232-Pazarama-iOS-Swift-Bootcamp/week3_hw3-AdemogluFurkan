@@ -19,3 +19,9 @@ Bu haftanın ödev konusu olarak, geliştirdiğimiz iTunes Client App uygulamas�
 
 - iTunes Search API: https://developer.apple.com/library/archive/documentation/AudioVideo/ Conceptual/iTuneSearchAPI/Searching.html#//apple_ref/doc/uid/TP40017632-CH5-SW1
   
+  
+  App Flow
+
+
+https://user-images.githubusercontent.com/110473817/194770054-674dd505-c92a-4c1d-87be-9238dacdd16a.mov
+
