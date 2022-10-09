@@ -82,11 +82,17 @@ class DetailView: UIView {
            stackView.axis = .horizontal
            return stackView
        }()
-       
+    
+    let button = UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
        override init(frame: CGRect) {
            super.init(frame: frame)
            
            backgroundColor = .white
+           
+           
+            button.backgroundColor = .black
+           button.setTitle("Add Favorite", for: .normal)
+        
            
            releaseDateLabel.numberOfLines = .zero
            artistNameLabel.numberOfLines = .zero
@@ -105,7 +111,9 @@ class DetailView: UIView {
            let stackView = UIStackView(arrangedSubviews: [releaseDateStackView,
                                                           artistNameStackView,
                                                           countryStackView,
-                                                          genresStackView])
+                                                          genresStackView,
+                                                         button
+                                                         ])
            stackView.axis = .vertical
            stackView.spacing = 8.0
            addSubview(stackView)

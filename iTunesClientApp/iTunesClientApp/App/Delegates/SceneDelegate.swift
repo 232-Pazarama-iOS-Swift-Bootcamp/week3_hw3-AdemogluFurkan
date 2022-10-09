@@ -54,12 +54,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             let musicController = MusicViewController()
         let movieController = MovieViewController()
         let softwareController = SoftwareViewController()
+        let favoriteViewController=FavoriteViewController()
              let navigationController = UINavigationController(rootViewController: viewController)
         let navigationControllerTwo = UINavigationController(rootViewController: musicController)
         let navigationControllerMovie = UINavigationController(rootViewController: movieController)
         let navigationControllerSoftware = UINavigationController(rootViewController: softwareController)
+        let navigationControllerFavorite = UINavigationController(rootViewController: favoriteViewController)
              let tabBarController = UITabBarController()
-             tabBarController.viewControllers = [navigationController,navigationControllerTwo,navigationControllerMovie,navigationControllerSoftware]
+             tabBarController.viewControllers = [navigationController,navigationControllerTwo,navigationControllerMovie,navigationControllerSoftware,navigationControllerFavorite]
              window.rootViewController = tabBarController
              window.makeKeyAndVisible()
              self.window = window
